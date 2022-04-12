@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Match"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Match">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Div"/>
+        <xs:element ref="Date"/>
+        <xs:element ref="Time"/>
+        <xs:element ref="HomeTeam"/>
+        <xs:element ref="AwayTeam"/>
+        <xs:element ref="FTHG"/>
+        <xs:element ref="FTAG"/>
+        <xs:element ref="FTR"/>
+        <xs:element ref="HTHG"/>
+        <xs:element ref="HTAG"/>
+        <xs:element ref="HTR"/>
+        <xs:element ref="Referee"/>
+        <xs:element ref="HS"/>
+        <xs:element ref="AS"/>
+        <xs:element ref="HST"/>
+        <xs:element ref="AST"/>
+        <xs:element ref="HF"/>
+        <xs:element ref="AF"/>
+        <xs:element ref="HC"/>
+        <xs:element ref="AC"/>
+        <xs:element ref="HY"/>
+        <xs:element ref="AY"/>
+        <xs:element ref="HR"/>
+        <xs:element ref="AR"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Div" type="xs:NCName"/>
+  <xs:element name="Date" type="xs:string"/>
+  <xs:element name="Time" type="xs:NMTOKEN"/>
+  <xs:element name="HomeTeam" type="xs:string"/>
+  <xs:element name="AwayTeam" type="xs:string"/>
+  <xs:element name="FTHG" type="xs:integer"/>
+  <xs:element name="FTAG" type="xs:integer"/>
+  <xs:element name="FTR" type="xs:NCName"/>
+  <xs:element name="HTHG" type="xs:integer"/>
+  <xs:element name="HTAG" type="xs:integer"/>
+  <xs:element name="HTR" type="xs:NCName"/>
+  <xs:element name="Referee" type="xs:string"/>
+  <xs:element name="HS" type="xs:integer"/>
+  <xs:element name="AS" type="xs:integer"/>
+  <xs:element name="HST" type="xs:integer"/>
+  <xs:element name="AST" type="xs:integer"/>
+  <xs:element name="HF" type="xs:integer"/>
+  <xs:element name="AF" type="xs:integer"/>
+  <xs:element name="HC" type="xs:integer"/>
+  <xs:element name="AC" type="xs:integer"/>
+  <xs:element name="HY" type="xs:integer"/>
+  <xs:element name="AY" type="xs:integer"/>
+  <xs:element name="HR" type="xs:integer"/>
+  <xs:element name="AR" type="xs:integer"/>
+</xs:schema>
